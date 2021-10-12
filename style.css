@@ -1,0 +1,199 @@
+:root {
+    --bodyColor: #112236;
+    --mainColor: #a3bad2;
+    --textColor: #436280;
+    --headerColor: #dbe4ed;
+    /* --logoText: 'Barlow', sans-serif; */
+    --logoText: 'Open Sans Condensed', sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-free-code-camp {
+    width: 1.2861328125em;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+body {
+    /* possible background colors (#115eac, #4dc737, #5daf4f, #dd8015) */
+    background: linear-gradient(-30deg, var(--bodyColor), var(--headerColor), #115eac ,var(--mainColor));
+	background-size: 400% 400%;
+	animation: gradient 17s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+main {
+    width: 90%;
+    margin: 1% 5% 5% 5%;
+    padding: 1% 10% 10% 10%;
+    color: var(--textColor);
+    /* background-color: var(--bodyColor); */
+}
+
+.icon {
+    font-size: calc(32px + 6 * ((100vw - 320px) / 680));
+    color: var(--bodyColor);
+}
+
+header {
+    background-color: var(--headerColor);
+}
+
+h1 {
+    font-family: var(--logoText);
+}
+
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--textColor);
+}
+
+.topLogo {  
+    margin: 2px;
+    padding: 10px 5px 5px 5px;
+    color: var(--textColor);
+    background-color: var(--bodyColor);
+    border-radius: 50%;
+}
+
+.headerImg {
+    width: 25px;
+    height: 25px;
+}
+
+.logoText {
+    font-size: 16px;
+}
+
+.logoHeader {
+    margin-top: 1%;
+    font-family: 'Open Sans Condensed', sans-serif;;
+    letter-spacing: 0.2em;
+}
+
+.socialList {
+    right: 0;
+}
+
+.navList {
+    position: absolute;
+    top: 15%;
+    width: 90%;
+    margin: 2% 2% 2% 5%;
+    line-height: 75px;
+    background-color: transparent;
+    /* border-radius: 5px; */
+}
+
+
+
+.navListItem a {
+    color: #000000a9;
+    font-family: var(--logoText);
+    font-size: calc(46px + 6 * ((100vw - 320px) / 680));
+    line-height: 100px;
+}
+
+.profilePicDiv {
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.profilePic {
+    width: 310px;
+    height: 375px;
+}
+
+.aboutDiv {
+    padding: 5%;
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+.aboutHeader, .aboutText {
+    width: 90%;
+    /* margin: 2% 2% 0 5%; */
+    background-color: transparent;
+    color: #000000a9;
+}
+
+.aboutHeader {
+    padding-left: 10%;
+}
+
+.aboutText {
+    padding-left: 10%;
+}
+
+.sideBarText {
+    position: absolute;
+    top: 15%;
+    width: 90%;
+    margin: 2% 2% 2% 5%;
+    padding: 1%;
+    line-height: 29px;
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--bodyColor);
+}
+
+@media (max-width: 768px) {
+    .navListItem a {
+        line-height: 40px;
+    }
+
+}
+
+@media (max-width: 620px) {
+    .icon {
+        font-size: 24px;
+    }
+
+    .logoHeader {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 530px) {
+    .topLogo {
+        display: none;
+    }
+
+    .logoHeader {
+        margin-top: 2px;
+    }
+
+    .topNav {
+        margin-top: 2px;
+    }
+}

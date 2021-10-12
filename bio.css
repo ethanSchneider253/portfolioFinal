@@ -1,0 +1,120 @@
+:root {
+    --bodyColor: #112236;
+    --mainColor: #a3bad2;
+    --textColor: #436280;
+    --headerColor: #dbe4ed;
+    /* --logoText: 'Barlow', sans-serif; */
+    --logoText: 'Open Sans Condensed', sans-serif;
+}
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+}
+
+.icon-free-code-camp {
+    width: 1.2861328125em;
+}
+
+/* ==========================================
+Single-colored icons can be modified like so:
+.icon-name {
+    font-size: 32px;
+    color: red;
+}
+  ========================================== */
+
+body {
+    /* possible background colors (#115eac, #4dc737, #5daf4f, #dd8015) */
+    background: linear-gradient(-30deg, var(--bodyColor), var(--headerColor), #115eac ,var(--mainColor));
+	background-size: 400% 400%;
+	/* animation: gradient 17s ease infinite; */
+	/* height: 100vh; */
+    /* background-color: var(--bodyColor); */
+
+}
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+main {
+    width: 90%;
+    margin: 1% 5% 5% 5%;
+    padding: 1% 10% 10% 10%;
+    color: var(--textColor);
+    /* background-color: var(--bodyColor); */
+}
+
+.icon {
+    font-size: calc(32px + 6 * ((100vw - 320px) / 680));
+    color: var(--bodyColor);
+}
+
+header {
+    background-color: var(--headerColor);
+}
+
+h1 {
+    font-family: var(--logoText);
+}
+
+li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+
+a {
+    color: var(--textColor);
+}
+
+.topLogo {  
+    margin: 2px;
+    padding: 10px 5px 5px 5px;
+    color: var(--textColor);
+    background-color: var(--headerColor);
+    border-radius: 50%;
+}
+
+.headerImg {
+    width: 25px;
+    height: 25px;
+}
+
+.logoText {
+    font-size: 16px;
+}
+
+.logoHeader {
+    margin-top: 1%;
+    font-family: 'Open Sans Condensed', sans-serif;;
+    letter-spacing: 0.2em;
+}
+
+.socialList {
+    right: 0;
+}
+
+.aboutText {
+    color: var(--bodyColor);
+}
+
+@media (max-width: 775px) {
+    .socialList {
+        width: 100%;
+        justify-content: center;
+    }
+
+}
